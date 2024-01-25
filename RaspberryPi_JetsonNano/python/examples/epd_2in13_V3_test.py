@@ -38,7 +38,7 @@ try:
     draw.text((110, 90), u'微雪电子', font = font24, fill = 0)
     
     epd.display(epd.getbuffer(image))
-    time.sleep(2)
+    time.sleep(10)
     
     
     logging.info("Clear...")
