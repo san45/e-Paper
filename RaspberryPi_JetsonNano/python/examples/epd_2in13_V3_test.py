@@ -30,7 +30,7 @@ try:
     logging.info("1.Drawing on the image...")
     
     image = Image.new('1', ( epd.height,epd.width), 255)  # 255: clear the frame    
-    # image = image.rotate(270) # rotate
+    image = image.rotate(270) # rotate
     draw = ImageDraw.Draw(image)
     
 
