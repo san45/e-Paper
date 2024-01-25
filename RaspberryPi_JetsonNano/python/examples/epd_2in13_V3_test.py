@@ -28,7 +28,7 @@ try:
     font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
     
     logging.info("1.Drawing on the image...")
-    image = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame    
+    image = Image.new('1', (epd.width,epd.height), 255)  # 255: clear the frame    
     draw = ImageDraw.Draw(image)
     
 
@@ -36,7 +36,7 @@ try:
     draw.text((110, 90), u'微雪电子', font = font24, fill = 0)
     image = image.rotate(270) # rotate
     epd.display(epd.getbuffer(image))
-    time.sleep(2)
+    time.sleep(5)
     
     
     logging.info("Clear...")
