@@ -34,7 +34,7 @@ try:
     draw = ImageDraw.Draw(image)
     
 
-    draw.text((0, 0), 'e-Paper demo', font = font15, fill = 0, direction='ttb')
+    draw.text((0, 0), 'e-Paper demo', font = font15, fill = 0 )
     draw.text((110, 90), u'微雪电子', font = font24, fill = 0)
     
     epd.display(epd.getbuffer(image))
