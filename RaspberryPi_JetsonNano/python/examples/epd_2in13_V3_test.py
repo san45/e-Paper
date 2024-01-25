@@ -34,7 +34,7 @@ try:
 
     draw.text((120, 60), 'e-Paper demo', font = font15, fill = 0)
     draw.text((110, 90), u'微雪电子', font = font24, fill = 0)
-    image = image.rotate(90) # rotate
+    image = image.rotate(270) # rotate
     epd.display(epd.getbuffer(image))
     time.sleep(2)
     
